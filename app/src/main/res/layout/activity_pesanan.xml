@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper2"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="57dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/SaldoMu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saldo Anda:"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Saldo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:text="Belum ada nama " />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvHeaderHarga"
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Total Harga :" />
+
+                <TextView
+                    android:id="@+id/tvHargaTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:text="Belum ada nama " />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvItem"
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Harga :" />
+
+                <TextView
+                    android:id="@+id/tvJumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textSize="12dp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="Belum ada nama " />
+
+                <TextView
+                    android:id="@+id/tvHarga"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textSize="12dp"
+                    android:gravity="center_vertical"
+                    android:text="Belum ada nama " />
+
+
+
+            </TableRow>
+
+
+            <TextView
+                android:id="@+id/text_view_id"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:text="PRESS BACK IF YOU WANT TO ORDER MORE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnFinish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                  android:layout_weight="3"
+                android:text="Pay Now" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper2"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnMinuman"
+                android:layout_width="128dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:background="@drawable/drinklogo" />
+
+            <Button
+                android:id="@+id/btnMakanan"
+                android:layout_width="128dp"
+                android:layout_height="102dp"
+                android:layout_weight="1"
+                android:background="@drawable/foodlogo"
+                android:padding="2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnSnack"
+                android:layout_width="128dp"
+                android:layout_height="103dp"
+                android:layout_weight="1"
+                android:background="@drawable/snacklogo" />
+
+            <Button
+                android:id="@+id/btnTopUp"
+                android:layout_width="128dp"
+                android:layout_height="103dp"
+                android:layout_weight="1"
+                android:background="@drawable/topuplogo" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Find in Map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnMyOrder"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="My Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="History"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnMyOrder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

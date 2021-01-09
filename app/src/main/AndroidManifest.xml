@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uts2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="false"
+        android:name=".GlobalVariable"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MinumanActivity"
+            android:label="Binus EzyFoody: Drinks">
+        </activity>
+
+        <activity android:name=".PesananActivity"
+            android:label="Binus EzyFoody: Order">
+        </activity>
+
+        <activity android:name=".MakananActivity"
+            android:label="Binus EzyFoody: Food">
+        </activity>
+
+        <activity android:name=".SnackActivity"
+            android:label="Binus EzyFoody: Snack">
+        </activity>
+
+        <activity android:name=".TopupActivity"
+            android:label="Binus EzyFoody: Top Up">
+        </activity>
+
+
+        <activity android:name=".HistoryActivity"
+            android:label="Binus EzyFoody: History">
+        </activity>
+
+        <activity android:name=".MapsActivity"
+            android:label="Binus EzyFoody: maps">
+        </activity>
+    </application>
+
+
+</manifest>
